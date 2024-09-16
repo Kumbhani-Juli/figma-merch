@@ -1,8 +1,11 @@
 .the-figma-store-footer-container{
+    padding: 50px 5rem;
+}
+
+.the-figma-store-footer-content{
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding: 50px 5rem;
 }
 
 .the-figma-store-footer-second-content{
@@ -23,7 +26,168 @@
     font-weight: 600;
 }
 
+.footer-router-link{
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
 .the-figma-store-footer-right-content p{
     font-size: 16px;
     font-weight: bold;
+}
+
+.the-figma-store-footer-social-media-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 2rem 0;
+}
+
+.the-figma-store-footer-social-media-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.the-figma-store-footer-social-media-content h5{
+    font-size: 24px;
+}
+
+.the-figma-store-footer-up-arrow{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.footer-ticker-content{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.footer-ticker-content span{
+    margin: 0 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .the-figma-store-footer-container {
+        padding: 40px 4rem;
+    }
+    
+    .the-figma-store-footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .the-figma-store-footer-second-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .the-figma-store-footer-middle-content {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .the-figma-store-footer-right-content {
+        text-align: center;
+        width: auto;
+        margin-top: 1rem;
+    }
+
+    .the-figma-store-footer-social-media-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .the-figma-store-footer-container {
+        padding: 30px 2rem;
+    }
+
+    .the-figma-store-footer-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .the-figma-store-footer-left-content{
+        grid-column: 2 span;
+        text-align: center;
+    }
+    .the-figma-store-footer-second-content{
+        grid-column: 2 span;
+        text-align: center;
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .the-figma-store-footer-left-content img {
+        width: 100px; /* smaller logo on mobile */
+    }
+
+    .the-figma-store-footer-second-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .the-figma-store-footer-middle-content li {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .the-figma-store-footer-right-content p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .the-figma-store-footer-social-media-content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .the-figma-store-footer-social-media-content h5 {
+        font-size: 20px;
+    }
+
+    .the-figma-store-footer-up-arrow {
+        font-size: 30px;
+        text-align: right;
+    }
+
+    .footer-ticker-content {
+        font-size: 14px;
+    }
+    .the-figma-store-footer-social-media-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .footer-ticker-content{
+        gap: 1rem;
+    }
+    
+    .footer-ticker-content span{
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .the-figma-store-footer-container {
+        padding: 20px 1rem;
+    }
+
+    .the-figma-store-footer-middle-content {
+        font-size: 12px;
+        margin-top: 1rem;
+    }
+
+    .the-figma-store-footer-social-media-content h5 {
+        font-size: 18px;
+    }
+
+    .footer-ticker-content {
+        font-size: 12px;
+    }
 }

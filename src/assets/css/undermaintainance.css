@@ -1,22 +1,76 @@
-.undermaintainance-page-container{
-    width: 600px;
+.undermaintainance-page-container {
+    width: 80%;
+    max-width: 600px; /* Ensures it doesn't go beyond 600px on larger screens */
     margin: 7.1rem auto;
     border: 1px solid lightgray;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
     border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for better appearance */
 }
 
-.undermaintainance-page-container h2{
+.undermaintainance-page-container h2 {
     color: rgb(72, 72, 72);
     font-weight: bold;
+    font-size: 2rem; /* Larger text for better readability */
 }
 
-.router-link-undermaintance{
-    color: rgb(72, 72, 72); 
+.router-link-undermaintance {
+    color: rgb(72, 72, 72);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: inline-block; /* Ensures it behaves like a button */
+    transition: color 0.3s ease-in-out;
 }
 
-.undermaintainance-page-container h4{
+.router-link-undermaintance:hover {
+    color: #ef0500; /* Hover effect for better UX */
+}
+
+.undermaintainance-page-container h4 {
     color: #ef0500;
+    font-size: 1.5rem;
+}
+
+/* Media Query for Mobile and Small Screens */
+@media (max-width: 768px) {
+    .undermaintainance-page-container {
+        width: 90%; /* Adjusts the container width for small screens */
+        padding: 15px;
+        margin-top: 5rem; /* Reduce margin for smaller screens */
+    }
+
+    .undermaintainance-page-container h2 {
+        font-size: 1.5rem; /* Smaller text size for mobile */
+    }
+
+    .undermaintainance-page-container h4 {
+        font-size: 1.2rem; /* Smaller heading size */
+    }
+
+    .router-link-undermaintance {
+        font-size: 0.9rem; /* Adjust link size for better mobile display */
+    }
+}
+
+/* Media Query for Extra Small Screens */
+@media (max-width: 480px) {
+    .undermaintainance-page-container {
+        margin-top: 3rem; /* Further reduce margin on extra small screens */
+        padding: 10px;
+    }
+
+    .undermaintainance-page-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .undermaintainance-page-container h4 {
+        font-size: 1rem;
+    }
+
+    .router-link-undermaintance {
+        font-size: 0.8rem;
+    }
 }

@@ -1,10 +1,10 @@
 import React from 'react'
-import UnderMaintainance from './UnderMaintainance'
+import TopSection from './shopPages/TopSection'
 
 const Shop = () => {
     return (
         <>
-            <UnderMaintainance pageTitle="Shop Page" />
+            <TopSection />
         </>
     )
 }
