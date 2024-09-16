@@ -1,0 +1,22 @@
+.undermaintainance-page-container{
+    width: 600px;
+    margin: 7.1rem auto;
+    border: 1px solid lightgray;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.undermaintainance-page-container h2{
+    color: rgb(72, 72, 72);
+    font-weight: bold;
+}
+
+.router-link-undermaintance{
+    color: rgb(72, 72, 72); 
+}
+
+.undermaintainance-page-container h4{
+    color: #ef0500;
+}

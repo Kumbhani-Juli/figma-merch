@@ -1,0 +1,29 @@
+.the-figma-store-footer-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 50px 5rem;
+}
+
+.the-figma-store-footer-second-content{
+    width: 50px;
+}
+
+.the-figma-store-footer-right-content{
+    width: 300px;
+}
+
+.the-figma-store-footer-second-content h2{
+    font-weight: bold;
+}
+
+.the-figma-store-footer-middle-content li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.the-figma-store-footer-right-content p{
+    font-size: 16px;
+    font-weight: bold;
+}
