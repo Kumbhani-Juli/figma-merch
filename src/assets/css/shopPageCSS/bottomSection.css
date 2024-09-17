@@ -1,0 +1,98 @@
+.shop-page-bottom-section-container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 6rem 0;
+}
+
+.shop-page-bottom-section-container-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.shop-page-bottom-section-content-boxs{
+    width: auto;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.shop-page-bottom-section-content-boxs-img{
+    height: 350px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.shop-page-bottom-section-content-boxs-img-height{
+    height: 600px;
+}
+
+.shop-page-bottom-section-content-boxs-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.shop-page-bottom-section-content-boxs:hover .shop-page-bottom-section-content-boxs-img{
+    border: 2px solid #000;
+}
+
+.shop-page-bottom-section-content-boxs-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    gap: 20px;
+}
+
+.shop-page-bottom-section-content-boxs-body h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.shop-page-bottom-section-content-boxs-body p{
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.shop-page-bottom-section-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 5rem 0;
+    row-gap: 3rem;
+    column-gap: 2rem;
+}
+
+@media (max-width:768px) {
+    .shop-page-bottom-section-container-title h1{
+        font-size: 30px;
+    }
+    .shop-page-bottom-section-content{
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        column-gap: 10px;
+    }   
+    .shop-page-bottom-section-content-boxs{
+        width: 100%;
+    }
+    .shop-page-bottom-section-content-boxs-img{
+        height: 200px;
+        border-radius: 30px;
+        width: 100%;
+    }
+    .shop-page-bottom-section-content-boxs-body h2{
+        font-size: 16px;
+    }
+    .shop-page-bottom-section-content-boxs-body p{
+        font-size: 14px;
+    }
+    .shop-page-bottom-section-content-boxs-body{
+        gap: 0;
+    }
+    .shop-page-bottom-section-content-boxs-img-height{
+        height: 350px;
+    }
+}

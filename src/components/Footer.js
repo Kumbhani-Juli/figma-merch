@@ -110,9 +110,9 @@ const Footer = () => {
                         <Link to='/faqs' className='footer-router-link'>
                             <li>FAQ</li>
                         </Link>
-                        <Link to='/contact-us' className='footer-router-link'>
+                        <a href='/about#contact' className='footer-router-link'>
                             <li>Contact Us</li>
-                        </Link>
+                        </a>
                         <Link to='/privacy-policy' className='footer-router-link'>
                             <li>Privacy Policy</li>
                         </Link>

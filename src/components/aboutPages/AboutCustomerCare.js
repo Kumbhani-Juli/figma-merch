@@ -32,6 +32,7 @@ const AboutCustomerCare = () => {
         {
             sectionIcon: sectionIcon3,
             sectionTitle: "Contact Us",
+            targetId: 'contact',
             sectionContentData: [
                 {
                     sectionContent: "You can contact support by emailing thefigmastore@harperandscott.com. ",
@@ -49,7 +50,7 @@ const AboutCustomerCare = () => {
                     <div className='col-md-6 about-faq-section-right-content'>
                         {
                             customerCareData?.map((data, index) => (
-                                <div className='about-faq-section-right-content-detail-box' key={index}>
+                                <div className='about-faq-section-right-content-detail-box' key={index} id={data?.targetId}>
                                     <div className='about-faq-section-right-content-detail-box-title'>
                                         <img src={data?.sectionIcon} className='img-fluid' alt='title-icon' />
                                         <h3>{data?.sectionTitle}</h3>

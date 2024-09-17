@@ -1,11 +1,12 @@
-import { faUser, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faBars, faTimes, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import '../assets/css/header.css';
 import { Link } from 'react-router-dom';
 
-const Header = ({backgroundColor}) => {
+const Header = ({ backgroundColor }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [showSearchBar, SetShowSearchBar] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -13,10 +14,13 @@ const Header = ({backgroundColor}) => {
 
     return (
         <>
+            <div className={`the-figma-store-header-searchbar-container ${showSearchBar ? 'show' : ''}`}>
+                <input type='text' className='the-figma-store-header-searchbar-input' placeholder='Search' />
+            </div>
             <div className='the-figma-store-header-container' id='top'
-            style={{
-                backgroundColor: backgroundColor ? backgroundColor : '#fff'
-            }}
+                style={{
+                    backgroundColor: backgroundColor ? backgroundColor : '#fff'
+                }}
             >
                 <div className="the-figma-store-header-menu-toggle" onClick={toggleMenu}>
                     <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
@@ -37,6 +41,12 @@ const Header = ({backgroundColor}) => {
                             <li>Account</li>
                         </div>
                     }
+                    <div className='the-figma-store-header-search-button'>
+                        <FontAwesomeIcon icon={faSearch} className='the-figma-header-search-icon' onClick={() => SetShowSearchBar(!showSearchBar)} />
+                    </div>
+                </div>
+                <div className='the-figma-store-header-mobile-search-button'>
+                    <FontAwesomeIcon icon={faSearch} className='the-figma-header-mobile-search-icon' onClick={() => {SetShowSearchBar(!showSearchBar);setIsMenuOpen(false)}} />
                 </div>
                 <div className='the-figma-store-header-title-section'>
                     <Link to='/' className='router-link'><h3>THE FIGMA STORE</h3></Link>

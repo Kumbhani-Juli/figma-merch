@@ -6,9 +6,9 @@ import About from "./components/About";
 import LoginPage from "./components/LoginPage";
 import Cart from "./components/Cart";
 import FAQs from "./components/FAQs";
-import ContactUs from "./components/ContactUs";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsofService from "./components/TermsofService";
+import RegisterPage from "./components/RegisterPage";
 
 function App() {
   return (
@@ -55,14 +55,6 @@ function App() {
                 <Footer />
               </>
             } />
-          <Route exact path='/contact-us'
-            element={
-              <>
-                <Header />
-                <ContactUs />
-                <Footer />
-              </>
-            } />
           <Route exact path='/privacy-policy'
             element={
               <>
@@ -76,6 +68,14 @@ function App() {
               <>
                 <Header />
                 <TermsofService />
+                <Footer />
+              </>
+            } />
+          <Route exact path='/register'
+            element={
+              <>
+                <Header />
+                <RegisterPage />
                 <Footer />
               </>
             } />

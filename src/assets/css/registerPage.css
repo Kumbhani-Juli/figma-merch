@@ -1,0 +1,91 @@
+.register-page-section-container{
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 10px 20px;
+}
+
+.register-page-content-title{
+    text-align: center;
+    margin: 2rem;
+}
+
+.register-page-content-title h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.register-page-form-section{
+    margin-top: 5rem;
+}
+
+.register-page-email-field-section{
+    padding: 10px;
+    margin: 2rem 0;
+}
+.register-page-email-field-section p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.register-email-input-field,
+.register-password-input-field,
+.register-firstname-input-field,
+.register-lastname-input-field{
+    width: 100%;
+    padding-top: 10px;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.register-page-button-section button{
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 20px;
+    border: 2px solid #000;
+    transition: 0.5s ease-in-out;
+}
+
+.register-page-button-section button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.register-page-create-account-section{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.register-page-create-account-section button{
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 20px;
+    border: 2px solid #000;
+    transition: 0.5s ease-in-out;
+}
+
+.register-page-create-account-section button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.register-page-create-account-section p{
+    font-weight: 600;
+}
+
+@media (max-width:768px) {
+    .register-page-content-title h1{
+        font-size: 30px;
+    }
+    .register-page-form-section{
+        margin-top: 3rem;
+    }
+}

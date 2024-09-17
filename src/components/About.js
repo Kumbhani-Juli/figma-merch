@@ -1,5 +1,4 @@
 import React from 'react'
-import UnderMaintainance from './UnderMaintainance'
 import AboutTopSection from './aboutPages/AboutTopSection'
 import AboutDonationSection from './aboutPages/AboutDonationSection'
 import AboutFAQSection from './aboutPages/AboutFAQSection'
