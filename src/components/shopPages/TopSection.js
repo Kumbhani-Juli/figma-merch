@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../../assets/css/shopPageCSS/topSection.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowLeft, faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
+import Circle from './Circle';
 
 const sliderData = [
     {
@@ -82,48 +83,51 @@ const TopSection = () => {
     };
 
     return (
-        <div className='shop-top-slider-section-container'>
-            <div className='shop-top-slider-section-content'>
-                <div
-                    className='shop-top-slider-section-content-inner'
-                    style={{
-                        transform: `translateX(-${currentSlide * containerWidth}px)`,
-                        width: `${containerWidth * totalSlides}px`,
-                        display: 'flex',
-                    }}
-                >
-                    {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-                        <div
-                            key={slideIndex}
-                            className='shop-top-slider-section-slide'
-                            style={{ width: `${containerWidth}px`, display: 'flex' }}
-                        >
-                            {sliderData.slice(slideIndex * itemsPerSlide, (slideIndex + 1) * itemsPerSlide).map((slide, index) => (
-                                <div
-                                    key={slide.id}
-                                    className='shop-top-slider-section-content-box'
-                                    style={{ backgroundImage: `url(${slide.imgSrc})` }}
-                                    onMouseEnter={() => setHoveredIndex(slide.id)}
-                                    onMouseLeave={() => setHoveredIndex(null)}
-                                >
-                                    {hoveredIndex === slide.id && (
-                                        <div className='shop-top-slider-section-content-box-span'>
-                                            <h3>{slide.title}</h3>
-                                        </div>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    ))}
+        <>
+            <div className='shop-top-slider-section-container'>
+                <div className='shop-top-slider-section-content'>
+                    <div
+                        className='shop-top-slider-section-content-inner'
+                        style={{
+                            transform: `translateX(-${currentSlide * containerWidth}px)`,
+                            width: `${containerWidth * totalSlides}px`,
+                            display: 'flex',
+                        }}
+                    >
+                        {Array.from({ length: totalSlides }).map((_, slideIndex) => (
+                            <div
+                                key={slideIndex}
+                                className='shop-top-slider-section-slide'
+                                style={{ width: `${containerWidth}px`, display: 'flex' }}
+                            >
+                                {sliderData.slice(slideIndex * itemsPerSlide, (slideIndex + 1) * itemsPerSlide).map((slide, index) => (
+                                    <div
+                                        key={slide.id}
+                                        className='shop-top-slider-section-content-box'
+                                        style={{ backgroundImage: `url(${slide.imgSrc})` }}
+                                        onMouseEnter={() => setHoveredIndex(slide.id)}
+                                        onMouseLeave={() => setHoveredIndex(null)}
+                                    >
+                                        {hoveredIndex === slide.id && (
+                                            <div className='shop-top-slider-section-content-box-span'>
+                                                <h3>{slide.title}</h3>
+                                            </div>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Slider navigation buttons */}
+                <div className="shop-slider-navigation">
+                    <button className="prev" onClick={prevSlide}><FontAwesomeIcon icon={faCircleArrowLeft} /></button>
+                    <button className="next" onClick={nextSlide}><FontAwesomeIcon icon={faCircleArrowRight} /></button>
                 </div>
             </div>
-
-            {/* Slider navigation buttons */}
-            <div className="shop-slider-navigation">
-                <button className="prev" onClick={prevSlide}><FontAwesomeIcon icon={faCircleArrowLeft} /></button>
-                <button className="next" onClick={nextSlide}><FontAwesomeIcon icon={faCircleArrowRight} /></button>
-            </div>
-        </div>
+            <Circle circleClass='shop-top-section-circle' />
+        </>
     );
 };
 

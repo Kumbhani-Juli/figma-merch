@@ -3,6 +3,7 @@
     overflow: hidden;
     position: relative;
     padding: 20px;
+    border-bottom: 4px solid #000;
 }
 
 .shop-top-slider-section-content {

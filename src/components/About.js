@@ -1,10 +1,17 @@
 import React from 'react'
 import UnderMaintainance from './UnderMaintainance'
+import AboutTopSection from './aboutPages/AboutTopSection'
+import AboutDonationSection from './aboutPages/AboutDonationSection'
+import AboutFAQSection from './aboutPages/AboutFAQSection'
+import AboutCustomerCare from './aboutPages/AboutCustomerCare'
 
 const About = () => {
   return (
     <>
-      <UnderMaintainance pageTitle="About Page"/>
+      <AboutTopSection />
+      <AboutDonationSection />
+      <AboutFAQSection />
+      <AboutCustomerCare />
     </>
   )
 }

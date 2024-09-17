@@ -1,0 +1,33 @@
+.shop-top-section-circle-center-image {
+    position: absolute;
+    animation: rotateImage 5s linear infinite;
+    right: 100px;
+    top: 450px;
+}
+
+.shop-top-section-circle-hand-img{
+    position: absolute;
+    right: 110px;
+    top: 450px;
+}
+
+.about-top-section-circle-center-image {
+    position: relative;
+    animation: rotateImage 5s linear infinite;
+}
+
+.about-top-section-circle-hand-img{
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+/* Image rotation keyframes */
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

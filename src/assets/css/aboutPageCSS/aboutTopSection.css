@@ -1,0 +1,63 @@
+/* General container styles */
+.about-top-section-container {
+  max-width: 1300px;
+  margin: 3rem auto;
+  padding: 20px;
+}
+
+.about-top-section-content {
+  align-items: center;
+}
+
+/* Hexagon shape using clip-path */
+.about-top-section-left-content img {
+  width: 100%;
+  height: auto;
+  clip-path: polygon(
+    50% 0%,
+    /* Top center */ 85% 12%,
+    /* Top-right */ 100% 50%,
+    /* Mid-right */ 85% 88%,
+    /* Bottom-right */ 50% 100%,
+    /* Bottom center */ 15% 88%,
+    /* Bottom-left */ 0% 50%,
+    /* Mid-left */ 15% 12% /* Top-left */
+  );
+}
+
+.about-top-section-right-content {
+  margin: auto 0 !important;
+}
+
+.about-top-section-right-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.about-top-section-right-content p {
+  font-size: 30px;
+}
+
+.about-top-section-circle-container{
+    position: relative;
+    max-width: 200px;
+    margin: 3rem auto;
+}
+
+@media (max-width: 768px) {
+  .about-top-section-container {
+    margin: 1rem;
+  }
+  .about-top-section-left-content img {
+    width: 300px;
+  }
+
+  .about-top-section-right-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .about-top-section-right-content p {
+    font-size: 20px;
+    text-align: justify;
+  }
+}
