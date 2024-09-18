@@ -19,7 +19,7 @@ const Header = ({ backgroundColor }) => {
             </div>
             <div className='the-figma-store-header-container' id='top'
                 style={{
-                    backgroundColor: backgroundColor ? backgroundColor : '#fff'
+                    backgroundColor: backgroundColor ? backgroundColor : '#fff',
                 }}
             >
                 <div className="the-figma-store-header-menu-toggle" onClick={toggleMenu}>

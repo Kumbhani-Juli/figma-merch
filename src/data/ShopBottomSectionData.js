@@ -147,6 +147,33 @@ import bgImg46 from '../assets/images/shopImgs/bottomSectionImgs/bgImg46.webp'
 import bgImg47 from '../assets/images/shopImgs/bottomSectionImgs/bgImg47.webp'
 import bgImg48 from '../assets/images/shopImgs/bottomSectionImgs/bgImg48.webp'
 
+// detailSection1
+import detailSection1Img1 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs1/sectionImg1.webp'
+import detailSection1Img2 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs1/sectionImg2.webp'
+import detailSection1Img3 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs1/sectionImg3.webp'
+import detailSection1Img4 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs1/sectionImg4.webp'
+import detailSection1Img5 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs1/sectionImg5.webp'
+import detailSection1Img6 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs1/sectionImg6.webp'
+
+// detailSection2
+import detailSection2Img1 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs2/sectionImg1.webp'
+import detailSection2Img2 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs2/sectionImg2.webp'
+import detailSection2Img3 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs2/sectionImg3.webp'
+import detailSection2Img4 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs2/sectionImg4.webp'
+import detailSection2Img5 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs2/sectionImg5.webp'
+
+// detailSection3
+import detailSection3Img1 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs3/sectionImg1.webp'
+import detailSection3Img2 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs3/sectionImg2.webp'
+import detailSection3Img3 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs3/sectionImg3.webp'
+
+// detailSection4
+import detailSection4Img1 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs4/sectionImg1.webp'
+import detailSection4Img2 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs4/sectionImg2.webp'
+import detailSection4Img3 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs4/sectionImg3.webp'
+import detailSection4Img4 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs4/sectionImg4.webp'
+import detailSection4Img5 from '../assets/images/shopImgs/bottomSectionDetailImgs/detailSectionImgs4/sectionImg5.webp'
+
 const shopBottomSectionData = [
     {
         sectionBgImg: setionImg2,
@@ -155,6 +182,33 @@ const shopBottomSectionData = [
         price: "Rs. 1,300",
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
+        slugs: "the-promt-magazine",
+        detailSectionData: {
+            badgeData: "components",
+            badgeBgColor: "#0fa958",
+            color: "#000",
+            content: "The Prompt is a magazine by Figma’s Story Studio and Brand Studio. Featuring leaders working across design, engineering, product development, and the built environment, this collection of essays and interviews takes on questions about how AI might shape the way we create. The 80-page print edition was designed by Chloe Scheffe. A digital version is available on our blog.",
+            sectionImgData: [
+                {
+                    sectionImg: detailSection1Img1,
+                },
+                {
+                    sectionImg: detailSection1Img2,
+                },
+                {
+                    sectionImg: detailSection1Img3,
+                },
+                {
+                    sectionImg: detailSection1Img4,
+                },
+                {
+                    sectionImg: detailSection1Img5,
+                },
+                {
+                    sectionImg: detailSection1Img6,
+                },
+            ]
+        }
     },
     {
         sectionDefaultImg: setionImg1,
@@ -165,6 +219,31 @@ const shopBottomSectionData = [
         price: "Rs. 2,200",
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
+        slugs: "chunky-glyph-tee",
+        detailSectionData: {
+            badgeData: "layers",
+            badgeBgColor: "#0fa958",
+            color: "#000",
+            sizeGuide: true,
+            content: "In case you missed it (how could you have missed it?) the shapes spell Figma.",
+            sectionImgData: [
+                {
+                    sectionImg: detailSection2Img1,
+                },
+                {
+                    sectionImg: detailSection2Img2,
+                },
+                {
+                    sectionImg: detailSection2Img3,
+                },
+                {
+                    sectionImg: detailSection2Img4,
+                },
+                {
+                    sectionImg: detailSection2Img5,
+                },
+            ]
+        }
     },
     {
         sectionDefaultImg: setionImg3,
@@ -175,6 +254,24 @@ const shopBottomSectionData = [
         price: "Rs. 1,800",
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
+        slugs: "all-smile-nalgene",
+        detailSectionData: {
+            badgeData: "components",
+            badgeBgColor: "#0fa958",
+            color: "#000",
+            content: "You’ll be all smiles every time you see this water bottle in your cabinet",
+            sectionImgData: [
+                {
+                    sectionImg: detailSection3Img1,
+                },
+                {
+                    sectionImg: detailSection3Img2,
+                },
+                {
+                    sectionImg: detailSection3Img3,
+                },
+            ]
+        }
     },
     {
         sectionDefaultImg: setionImg4,
@@ -185,6 +282,31 @@ const shopBottomSectionData = [
         price: "Rs. 2,200",
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
+        slugs: "independent-corners-tee",
+        detailSectionData: {
+            badgeData: "layers",
+            badgeBgColor: "#0fa958",
+            color: "#000",
+            sizeGuide: true,
+            content: "Look at you, being all independent",
+            sectionImgData: [
+                {
+                    sectionImg: detailSection4Img1,
+                },
+                {
+                    sectionImg: detailSection4Img2,
+                },
+                {
+                    sectionImg: detailSection4Img3,
+                },
+                {
+                    sectionImg: detailSection4Img4,
+                },
+                {
+                    sectionImg: detailSection4Img5,
+                },
+            ]
+        }
     },
     {
         sectionDefaultImg: setionImg5,

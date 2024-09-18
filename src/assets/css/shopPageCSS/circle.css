@@ -1,6 +1,6 @@
 .shop-top-section-circle-center-image {
     position: absolute;
-    animation: rotateImage 5s linear infinite;
+    animation: rotateImage 10s linear infinite;
     right: 100px;
     top: 450px;
 }
@@ -13,7 +13,7 @@
 
 .about-top-section-circle-center-image {
     position: relative;
-    animation: rotateImage 5s linear infinite;
+    animation: rotateImage 10s linear infinite;
 }
 
 .about-top-section-circle-hand-img{

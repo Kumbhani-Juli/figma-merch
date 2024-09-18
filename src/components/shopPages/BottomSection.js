@@ -9,6 +9,7 @@ import setionIcon7 from '../../assets/images/shopImgs/bottomSectionImgs/sectionI
 import setionIcon8 from '../../assets/images/shopImgs/bottomSectionImgs/sectionIcon8.svg'
 import '../../assets/css/shopPageCSS/bottomSection.css'
 import shopBottomSectionData from '../../data/ShopBottomSectionData'
+import { Link } from 'react-router-dom'
 
 const BottomSection = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null); // Track which index is hovered
@@ -26,7 +27,7 @@ const BottomSection = () => {
                     {
                         shopBottomSectionData?.map((data, index) => (
                             <div className='shop-page-bottom-section-content-boxs'
-                                key={index} // Add key here
+                                key={index}
                                 onMouseEnter={() => setHoveredIndex(index)} // Set the hovered index
                                 onMouseLeave={() => setHoveredIndex(null)} // Reset the hover index
                                 style={{
@@ -34,30 +35,32 @@ const BottomSection = () => {
                                     gridRow: data?.gridRowSpan,
                                 }}
                             >
-                                <div className={`shop-page-bottom-section-content-boxs-img ${data?.gridRowSpan === 'span 2' ? 'shop-page-bottom-section-content-boxs-img-height' : ''}`}
-                                    style={{
-                                        backgroundImage: data?.sectionBgImg
-                                            ? `url(${data.sectionBgImg})` : 'none',
-                                        backgroundPosition: 'center',
-                                        backgroundSize: 'cover',
-                                        backgroundRepeat: 'no-repeat',
-                                    }}
-                                >
-                                    {
-                                        hoveredIndex === index ? (
-                                            data?.sectionHoverImg && <img src={data?.sectionHoverImg} className='img-fluid' alt='section-img' />
-                                        ) : (
-                                            data?.sectionDefaultImg && <img src={data?.sectionDefaultImg} className='img-fluid' alt='section-img' />
-                                        )
-                                    }
-                                </div>
-                                <div className='shop-page-bottom-section-content-boxs-body'>
-                                    <div>
-                                        <p>{data?.newRelase}</p>
-                                        <h2>{data?.productName}</h2>
+                                <Link to={`/products/${data?.slugs}`} className='router-link'>
+                                    <div className={`shop-page-bottom-section-content-boxs-img ${data?.gridRowSpan === 'span 2' ? 'shop-page-bottom-section-content-boxs-img-height' : ''}`}
+                                        style={{
+                                            backgroundImage: data?.sectionBgImg
+                                                ? `url(${data.sectionBgImg})` : 'none',
+                                            backgroundPosition: 'center',
+                                            backgroundSize: 'cover',
+                                            backgroundRepeat: 'no-repeat',
+                                        }}
+                                    >
+                                        {
+                                            hoveredIndex === index ? (
+                                                data?.sectionHoverImg && <img src={data?.sectionHoverImg} className='img-fluid' alt='section-img' />
+                                            ) : (
+                                                data?.sectionDefaultImg && <img src={data?.sectionDefaultImg} className='img-fluid' alt='section-img' />
+                                            )
+                                        }
                                     </div>
-                                    <p>{data?.price}</p>
-                                </div>
+                                    <div className='shop-page-bottom-section-content-boxs-body'>
+                                        <div>
+                                            <p>{data?.newRelase}</p>
+                                            <h2>{data?.productName}</h2>
+                                        </div>
+                                        <p>{data?.price}</p>
+                                    </div>
+                                </Link>
                             </div>
                         ))
                     }

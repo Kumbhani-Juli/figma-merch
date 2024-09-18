@@ -9,6 +9,7 @@ import FAQs from "./components/FAQs";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsofService from "./components/TermsofService";
 import RegisterPage from "./components/RegisterPage";
+import FigmaDetailPage from "./components/FigmaDetailPage";
 
 function App() {
   return (
@@ -76,6 +77,14 @@ function App() {
               <>
                 <Header />
                 <RegisterPage />
+                <Footer />
+              </>
+            } />
+          <Route exact path='/products/:slugs'
+            element={
+              <>
+                <Header />
+                <FigmaDetailPage />
                 <Footer />
               </>
             } />
