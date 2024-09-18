@@ -128,3 +128,21 @@
     font-size: 18px;
     font-weight: 600;
 }
+
+@media (max-width:768px) {
+    .figma-detail-page-section-thumbnail-imgs img{
+        height: 80px;
+    }
+
+    .figma-detail-page-section-img-content img{
+        border-radius: 20px;
+    }
+
+    .figma-detail-page-section-detail-content{
+        padding: 0 10px !important;
+        margin-top: 2rem !important;
+    }
+    .figma-detail-page-section-detail-content h1{
+        font-size: 30px;
+    }
+}

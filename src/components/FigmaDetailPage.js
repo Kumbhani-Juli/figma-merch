@@ -28,12 +28,23 @@ const FigmaDetailPage = () => {
 
     const [showImg, setShowImg] = useState(data?.detailSectionData?.sectionImgData[0]?.sectionImg)
     const [size, setSize] = useState(sizeData[0].size)
+    const [qty, setQty] = useState(1)
+
+    const handleMinusQty = () => {
+        if (qty > 1) {
+            setQty(qty - 1)
+        }
+    }
+
+    const handlePlusQty = () => {
+        setQty(qty + 1)
+    }
 
     return (
         <>
             <div className='figma-detail-page-section-container'>
                 <div className='row mx-0 figma-detail-page-section-content'>
-                    <div className='col-md-1 figma-detail-page-section-thumbnail-content'>
+                    <div className='col-3 col-md-1 figma-detail-page-section-thumbnail-content'>
                         <div className='figma-detail-page-section-thumbnail-imgs'>
                             {
                                 data?.detailSectionData?.sectionImgData?.map((imgData, index) => (
@@ -48,18 +59,20 @@ const FigmaDetailPage = () => {
                             }
                         </div>
                     </div>
-                    <div className='col-md-6 figma-detail-page-section-img-content'>
+                    <div className='col-9 col-md-6 figma-detail-page-section-img-content'>
                         <img src={showImg} className='img-fluid' alt='section-imgs' />
                     </div>
                     <div className='col-md-5 figma-detail-page-section-detail-content'>
-                        <div className='figma-detail-page-section-detail-content-badge-box'
-                            style={{
-                                backgroundColor: data?.detailSectionData?.badgeBgColor ?? data.detailSectionData.badgeBgColor,
-                                color: data?.detailSectionData?.color ?? data.detailSectionData.color
-                            }}
-                        >
-                            <p>{data?.detailSectionData?.badgeData?.toUpperCase()}</p>
-                        </div>
+                        {
+                            data?.detailSectionData?.badgeData && <div className='figma-detail-page-section-detail-content-badge-box'
+                                style={{
+                                    backgroundColor: data?.detailSectionData?.badgeBgColor ?? data.detailSectionData.badgeBgColor,
+                                    color: data?.detailSectionData?.color ?? data.detailSectionData.color
+                                }}
+                            >
+                                <p>{data?.detailSectionData?.badgeData?.toUpperCase()}</p>
+                            </div>
+                        }
                         <h1>{data?.productName}</h1>
                         {
                             data?.detailSectionData?.sizeGuide && <div className='figma-detail-page-section-detail-content-size-detail'>
@@ -82,9 +95,9 @@ const FigmaDetailPage = () => {
                             </div>
                         }
                         <div className='figma-detail-page-qty-section'>
-                            <FontAwesomeIcon icon={faCircleMinus} className='figma-detail-page-qty-minus' />
-                            <small>1</small>
-                            <FontAwesomeIcon icon={faCirclePlus} className='figma-detail-page-qty-plus' />
+                            <FontAwesomeIcon icon={faCircleMinus} className='figma-detail-page-qty-minus' onClick={handleMinusQty} />
+                            <small>{qty}</small>
+                            <FontAwesomeIcon icon={faCirclePlus} className='figma-detail-page-qty-plus' onClick={handlePlusQty} />
                         </div>
                         <div className='figma-detail-page-add-cart-button'>
                             <button>ADD {data?.price}</button>
