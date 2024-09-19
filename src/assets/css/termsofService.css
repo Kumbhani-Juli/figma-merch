@@ -1,0 +1,49 @@
+.terms-of-service-page-section-container{
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+.terms-of-service-page-section-title{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.terms-of-service-page-section-title h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.terms-of-service-page-section-content{
+    margin-top: 6rem;
+}
+
+.terms-of-service-page-section-content h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.terms-of-service-page-section-content p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media (max-width:768px) {
+    .terms-of-service-page-section-container{
+        margin: 0;
+        padding: 1rem;
+    }
+    .terms-of-service-page-section-title{
+        margin: 3rem;
+    }
+    .terms-of-service-page-section-content h4{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .terms-of-service-page-section-content p{
+        font-size: 14px;
+        font-weight: 600;
+        text-align: justify;
+    }
+}
