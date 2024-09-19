@@ -58,7 +58,7 @@ const BottomSection = () => {
                                             <p>{data?.newRelase}</p>
                                             <h2>{data?.productName}</h2>
                                         </div>
-                                        <p>{data?.price}</p>
+                                        <p>Rs. {data?.price}</p>
                                     </div>
                                 </Link>
                             </div>

@@ -1,0 +1,51 @@
+.tshirt-size-guid-section-container {
+    max-width: 700px;
+    margin: 5rem auto;
+  }
+  
+  .tshirt-size-guid-section-title {
+    text-align: center;
+  }
+  
+  .tshirt-size-guide-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    border-collapse: collapse;
+    margin-top: 2rem;
+  }
+  
+  .table-header, .table-row {
+    display: contents; /* Allows child elements to act as direct grid items */
+  }
+  
+  .table-header {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+  }
+  
+  .table-cell {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .tshirt-size-guide-table {
+      grid-template-columns: 1fr 1fr 1fr; /* Stacks columns on smaller screens */
+    }
+  
+    .table-cell {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid #ddd;
+    }
+
+  
+    .table-row {
+      border-bottom: 2px solid #000;
+    }
+  }
+  

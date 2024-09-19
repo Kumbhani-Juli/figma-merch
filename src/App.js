@@ -10,6 +10,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsofService from "./components/TermsofService";
 import RegisterPage from "./components/RegisterPage";
 import FigmaDetailPage from "./components/FigmaDetailPage";
+import TshirtSizeGuide from "./components/TshirtSizeGuide";
 
 function App() {
   return (
@@ -85,6 +86,14 @@ function App() {
               <>
                 <Header />
                 <FigmaDetailPage />
+                <Footer />
+              </>
+            } />
+          <Route exact path='/t-shirt-size-guide'
+            element={
+              <>
+                <Header />
+                <TshirtSizeGuide />
                 <Footer />
               </>
             } />
