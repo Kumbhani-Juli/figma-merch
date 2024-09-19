@@ -116,9 +116,7 @@ const Footer = () => {
                         <Link to='/privacy-policy' className='footer-router-link'>
                             <li>Privacy Policy</li>
                         </Link>
-                        <Link to='/terms-of-service' className='footer-router-link'>
-                            <li>Terms of Service</li>
-                        </Link>
+                        <li>Terms of Service</li>
                     </div>
                     <div className='the-figma-store-footer-right-content'>
                         <p>This site is powered by  Harper + Scott, a Certified B-Corporation. For more information read Harper + Scott's CSR policy.</p>

@@ -14,14 +14,29 @@
     font-weight: bold;
 }
 
+.login-page-recovery-content-title{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.login-page-recovery-content-title h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
 .login-page-form-section{
     margin-top: 5rem;
+}
+
+.login-page-recovery-form-section{
+    margin-top: 1rem;
 }
 
 .login-page-email-field-section{
     padding: 10px;
     margin: 2rem 0;
 }
+
 .login-page-email-field-section p{
     font-size: 16px;
     font-weight: bold;
@@ -41,10 +56,12 @@
     margin: 2rem 0;
 }
 
-.login-page-forgot-link-section a{
+.login-page-forgot-link-section p{
     color: #000;
     font-size: 18px;
     font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .login-page-button-section button{
@@ -57,6 +74,7 @@
     padding: 5px 20px;
     border: 2px solid #000;
     transition: 0.5s ease-in-out;
+    text-transform: uppercase;
 }
 
 .login-page-button-section button:hover{

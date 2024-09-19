@@ -69,16 +69,15 @@ const TopSection = () => {
     const totalSlides = Math.ceil(sliderData.length / itemsPerSlide); // Total number of slides
 
     // Calculate the width of each slide
-    const slideWidth = 300; // Width of each item
+    const slideWidth = 400; // Width of each item
     const containerWidth = slideWidth * itemsPerSlide; // Width of each slide
 
     const nextSlide = () => {
         setCurrentSlide((prevSlide) => {
-            if (prevSlide < totalSlides - 1) {
+            if (prevSlide < sliderData.length - 1) {
                 return prevSlide + 1;
-            } else {
-                return 0; // Loop back to the first slide
             }
+            return prevSlide;
         });
     };
 
@@ -86,9 +85,8 @@ const TopSection = () => {
         setCurrentSlide((prevSlide) => {
             if (prevSlide > 0) {
                 return prevSlide - 1;
-            } else {
-                return totalSlides - 1; // Loop back to the last slide
             }
+            return prevSlide;
         });
     };
 
