@@ -489,6 +489,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "the-promt-magazine",
+        fadeDirection: 'left',
+        fadeDuration: '1000',
         detailSectionData: {
             badgeData: "components",
             badgeBgColor: "#0fa958",
@@ -525,6 +527,8 @@ const shopBottomSectionData = [
         price: 2200,
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
+        fadeDirection: 'left',
+        fadeDuration: '1400',
         slugs: "chunky-glyph-tee",
         detailSectionData: {
             badgeData: "layers",
@@ -567,6 +571,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "all-smile-nalgene",
+        fadeDirection: 'left',
+        fadeDuration: '1600',
         detailSectionData: {
             badgeData: "components",
             badgeBgColor: "#0fa958",
@@ -595,6 +601,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "independent-corners-tee",
+        fadeDirection: 'left',
+        fadeDuration: '1800',
         detailSectionData: {
             badgeData: "layers",
             badgeBgColor: "#0fa958",
@@ -635,6 +643,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "doodle-tee",
+        fadeDirection: 'up',
+        fadeDuration: '1000',
         detailSectionData: {
             badgeData: "layers",
             badgeBgColor: "#0fa958",
@@ -682,6 +692,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "figma-doodle-socks",
+        fadeDirection: 'up',
+        fadeDuration: '1400',
         detailSectionData: {
             badgeData: "layers",
             badgeBgColor: "#0fa958",
@@ -716,6 +728,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 2',
         gridRowSpan: 'span 2',
         slugs: "wildflower-hoodie",
+        fadeDirection: 'up',
+        fadeDuration: '1800',
         detailSectionData: {
             badgeData: "layers",
             badgeBgColor: "#0fa958",
@@ -760,6 +774,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 2',
         gridRowSpan: 'span 2',
         slugs: "inkblot-tee",
+        fadeDirection: 'left',
+        fadeDuration: '1000',
         detailSectionData: {
             badgeData: "layers",
             badgeBgColor: "#0fa958",
@@ -804,6 +820,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "chunky-glyph-cap",
+        fadeDirection: 'left',
+        fadeDuration: '1400',
         detailSectionData: {
             badgeData: "layers",
             badgeBgColor: "#0fa958",
@@ -832,6 +850,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "local-styles-crewneck",
+        fadeDirection: 'left',
+        fadeDuration: '1800',
         detailSectionData: {
             badgeData: "layers",
             badgeBgColor: "#0fa958",
@@ -873,6 +893,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "all-smiles-tee",
+        fadeDirection: 'up',
+        fadeDuration: '1000',
         detailSectionData: {
             badgeData: "layers",
             badgeBgColor: "#0fa958",
@@ -914,6 +936,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "gestures-longsleeve",
+        fadeDirection: 'up',
+        fadeDuration: '1400',
         detailSectionData: {
             badgeData: "layers",
             badgeBgColor: "#0fa958",
@@ -955,6 +979,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "doodie-hoodie",
+        fadeDirection: 'up',
+        fadeDuration: '1800',
         detailSectionData: {
             badgeData: "layers",
             badgeBgColor: "#0fa958",
@@ -996,6 +1022,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "chunky-glyph-longsleeve",
+        fadeDirection: 'up',
+        fadeDuration: '2200',
         detailSectionData: {
             badgeData: "layers",
             badgeBgColor: "#0fa958",
@@ -1043,6 +1071,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "butterfly-tote",
+        fadeDirection: 'left',
+        fadeDuration: '1000',
         detailSectionData: {
             badgeData: "components",
             badgeBgColor: "#0fa958",
@@ -1077,6 +1107,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 1',
         gridRowSpan: 'span 1',
         slugs: "make-your-marker-pack",
+        fadeDirection: 'left',
+        fadeDuration: '1400',
         detailSectionData: {
             badgeData: "components",
             badgeBgColor: "#0fa958",
@@ -1108,6 +1140,8 @@ const shopBottomSectionData = [
         gridColumnSpan: 'span 2',
         gridRowSpan: 'span 2',
         slugs: "round-corners-graph-notebook",
+        fadeDirection: 'left',
+        fadeDuration: '1800',
         detailSectionData: {
             badgeData: "components",
             badgeBgColor: "#0fa958",

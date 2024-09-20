@@ -10,6 +10,7 @@ import setionIcon8 from '../../assets/images/shopImgs/bottomSectionImgs/sectionI
 import '../../assets/css/shopPageCSS/bottomSection.css'
 import shopBottomSectionData from '../../data/ShopBottomSectionData'
 import { Link } from 'react-router-dom'
+import FadeComponent from '../FadeComponent'
 
 const BottomSection = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null); // Track which index is hovered
@@ -19,8 +20,17 @@ const BottomSection = () => {
             <div className='shop-page-bottom-section-container'>
                 <div className='shop-page-bottom-section-container-title'>
                     <h1>
-                        Figma's <img src={setionIcon1} className='img-fluid' alt='section-icon' />  Collection <img src={setionIcon2} className='img-fluid' alt='section-icon' /> Of
-                        Layers <img src={setionIcon3} className='img-fluid' alt='section-icon' />  And <img src={setionIcon4} className='img-fluid' alt='section-icon' />  Components <img src={setionIcon5} className='img-fluid' alt='section-icon' /> For you <img src={setionIcon6} className='img-fluid' alt='section-icon' /> and <img src={setionIcon7} className='img-fluid' alt='section-icon' /> your <img src={setionIcon8} className='img-fluid' alt='section-icon' /> friends
+                        <FadeComponent duration={1000} delay={1000} direction='right'>
+                            Figma's <img src={setionIcon1} className='img-fluid' alt='section-icon' />
+                            Collection <img src={setionIcon2} className='img-fluid' alt='section-icon' />
+                            Of Layers <img src={setionIcon3} className='img-fluid' alt='section-icon' />
+                            And <img src={setionIcon4} className='img-fluid' alt='section-icon' />
+                            Components <img src={setionIcon5} className='img-fluid' alt='section-icon' />
+                            For you <img src={setionIcon6} className='img-fluid' alt='section-icon' />
+                            and <img src={setionIcon7} className='img-fluid' alt='section-icon' />
+                            your <img src={setionIcon8} className='img-fluid' alt='section-icon' />
+                            friends
+                        </FadeComponent>
                     </h1>
                 </div>
                 <div className='shop-page-bottom-section-content'>
@@ -35,32 +45,34 @@ const BottomSection = () => {
                                     gridRow: data?.gridRowSpan,
                                 }}
                             >
-                                <Link to={`/products/${data?.slugs}`} className='router-link'>
-                                    <div className={`shop-page-bottom-section-content-boxs-img ${data?.gridRowSpan === 'span 2' ? 'shop-page-bottom-section-content-boxs-img-height' : ''}`}
-                                        style={{
-                                            backgroundImage: data?.sectionBgImg
-                                                ? `url(${data.sectionBgImg})` : 'none',
-                                            backgroundPosition: 'center',
-                                            backgroundSize: 'cover',
-                                            backgroundRepeat: 'no-repeat',
-                                        }}
-                                    >
-                                        {
-                                            hoveredIndex === index ? (
-                                                data?.sectionHoverImg && <img src={data?.sectionHoverImg} className='img-fluid' alt='section-img' />
-                                            ) : (
-                                                data?.sectionDefaultImg && <img src={data?.sectionDefaultImg} className='img-fluid' alt='section-img' />
-                                            )
-                                        }
-                                    </div>
-                                    <div className='shop-page-bottom-section-content-boxs-body'>
-                                        <div>
-                                            <p>{data?.newRelase}</p>
-                                            <h2>{data?.productName}</h2>
+                                <FadeComponent duration={data?.fadeDuration} delay={200} direction={data?.fadeDirection}>
+                                    <Link to={`/products/${data?.slugs}`} className='router-link'>
+                                        <div className={`shop-page-bottom-section-content-boxs-img ${data?.gridRowSpan === 'span 2' ? 'shop-page-bottom-section-content-boxs-img-height' : ''}`}
+                                            style={{
+                                                backgroundImage: data?.sectionBgImg
+                                                    ? `url(${data.sectionBgImg})` : 'none',
+                                                backgroundPosition: 'center',
+                                                backgroundSize: 'cover',
+                                                backgroundRepeat: 'no-repeat',
+                                            }}
+                                        >
+                                            {
+                                                hoveredIndex === index ? (
+                                                    data?.sectionHoverImg && <img src={data?.sectionHoverImg} className='img-fluid' alt='section-img' />
+                                                ) : (
+                                                    data?.sectionDefaultImg && <img src={data?.sectionDefaultImg} className='img-fluid' alt='section-img' />
+                                                )
+                                            }
                                         </div>
-                                        <p>Rs. {data?.price}</p>
-                                    </div>
-                                </Link>
+                                        <div className='shop-page-bottom-section-content-boxs-body'>
+                                            <div>
+                                                <p>{data?.newRelase}</p>
+                                                <h2>{data?.productName}</h2>
+                                            </div>
+                                            <p>Rs. {data?.price}</p>
+                                        </div>
+                                    </Link>
+                                </FadeComponent>
                             </div>
                         ))
                     }
