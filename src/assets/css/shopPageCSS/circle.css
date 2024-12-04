@@ -2,21 +2,24 @@
     position: absolute;
     animation: rotateImage 10s linear infinite;
     right: 100px;
-    top: 450px;
+    top: 500px;
+    z-index: 999;
 }
 
-.shop-top-section-circle-hand-img{
+.shop-top-section-circle-hand-img {
     position: absolute;
     right: 110px;
-    top: 450px;
+    top: 500px;
+    z-index: 999;
 }
 
 .about-top-section-circle-center-image {
     position: relative;
     animation: rotateImage 10s linear infinite;
+
 }
 
-.about-top-section-circle-hand-img{
+.about-top-section-circle-hand-img {
     position: absolute;
     top: 0;
     left: -10px;
@@ -27,6 +30,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
