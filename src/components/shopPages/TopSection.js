@@ -8,6 +8,7 @@ import "../../assets/css/shopPageCSS/topSection.css";
 import { Link } from "react-router-dom";
 import Circle from "./Circle";
 
+// Slider Data
 const sliderData = [
 	{
 		id: 1,
@@ -65,6 +66,7 @@ const sliderData = [
 	},
 ];
 
+// TopSection Component
 const TopSection = () => {
 	const [hoverIndex, setHoverIndex] = useState(null);
 
@@ -74,10 +76,24 @@ const TopSection = () => {
 				<Swiper
 					modules={[Navigation, Pagination]}
 					spaceBetween={20}
-					slidesPerView={4}
+					slidesPerView={4} // Default slides for large screens
 					navigation
 					loop={true}
 					className="shop-top-slider"
+					breakpoints={{
+						320: {
+							slidesPerView: 1, // 1 slide for small screens
+							spaceBetween: 10,
+						},
+						768: {
+							slidesPerView: 2, // 2 slides for tablets
+							spaceBetween: 15,
+						},
+						1024: {
+							slidesPerView: 4, // 4 slides for larger screens
+							spaceBetween: 20,
+						},
+					}}
 				>
 					{sliderData.map((slide, index) => (
 						<SwiperSlide key={slide.id}>

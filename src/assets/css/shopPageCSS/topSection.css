@@ -88,3 +88,28 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+@media (max-width: 768px) {
+    .shop-top-slider-section-container {
+        padding: 10px;
+    }
+
+    .shop-top-slider-section-content-box {
+        height: 350px;
+        width: auto;
+    }
+
+    .shop-top-slider-section-content-box-span {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .shop-top-slider-section-content-box-span h3 {
+        font-size: 16px;
+    }
+
+    .shop-slider-navigation .prev,
+    .shop-slider-navigation .next {
+        font-size: 25px;
+    }
+}

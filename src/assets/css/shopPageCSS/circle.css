@@ -35,3 +35,15 @@
         transform: rotate(360deg);
     }
 }
+
+@media (max-width: 768px) {
+    .shop-top-section-circle-center-image {
+        right: 30px;
+        top: 350px;
+    }
+
+    .shop-top-section-circle-hand-img {
+        right: 40px;
+        top: 350px;
+    }
+}

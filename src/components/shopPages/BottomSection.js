@@ -36,8 +36,7 @@ const BottomSection = () => {
 							and{" "}
 							<img src={setionIcon7} className="img-fluid" alt="section-icon" />{" "}
 							your{" "}
-							<img src={setionIcon8} className="img-fluid" alt="section-icon" />
-							{""}
+							<img src={setionIcon8} className="img-fluid" alt="section-icon" />{" "}
 							friends
 						</FadeComponent>
 					</h1>
